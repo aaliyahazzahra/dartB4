@@ -13,8 +13,9 @@ void main() {
    int nilaiUAS = int.parse(inputNilaiUAS?? "0");
    double kehadiran = double.parse(inputKehadiran ?? "0");
 
-   // Hitung Rata-Rata Nilai
+   // Hitung Rata-Rata Nilai dan Mencetaknya
    double nilaiRataRata = (nilaiUTS + nilaiUAS)/2;
+   print("Nilai Rata-rata Siswa: $nilaiRataRata");
 
    //Penentuan Lulus atau Tidak
    if(nilaiRataRata >= 70 && kehadiran >= 0.75 && nilaiUTS >= 60 && nilaiUAS >= 60){
